@@ -80,7 +80,7 @@ contract QuadraticVoting is IQuadraticVoting {
         item.positiveVotes[msg.sender] = 0;
 
         // Distribute voting cost to every item except for this one
-        uint reward = msg.value / (itemCount - 1);
+        uint reward = msg.value / itemCount;
         for(uint i = 0; i < itemCount;)
         {
             if (i != itemId) items[i].amount += reward;
