@@ -14,7 +14,7 @@ import { ArrowDownIcon, ArrowUpIcon } from "@chakra-ui/icons";
 import { Web3Context } from "../contexts/Web3Context";
 import { useContext, useState } from "react";
 
-const Item = (item?: VotingItem) => {
+const Item = ({ item }: { item: VotingItem }) => {
   const toast = useToast();
 
   const {
@@ -124,8 +124,7 @@ const Item = (item?: VotingItem) => {
       <HStack w="full" justifyContent="space-between">
         <HStack spacing={5}>
           <ItemImage
-            src="https://source.unsplash.com/random/900×700/?fruit"
-            //   src={`https://ipfs.io/ipfs/${item?.imageHash}`}
+            src={`https://gateway.pinata.cloud/ipfs/${item?.imageHash}`}
           />
           {account !== item?.owner && (
             <>

@@ -1,6 +1,7 @@
-import { VStack, Text, Flex } from "@chakra-ui/react";
+import { Text, VStack } from "@chakra-ui/react";
 import { useContext, useEffect, useState } from "react";
 import Item from "../components/Item";
+import { VotingItem } from "../consts/types";
 import { Web3Context } from "../contexts/Web3Context";
 
 export default function Home() {
@@ -20,10 +21,9 @@ export default function Home() {
       <Text fontFamily="styledFont" color="white" fontSize="30px">
         Ranked List
       </Text>
-      {/* {allItems.map((item) => {
-        <Flex w="50px" h="50px" bg="red" />;
-      })} */}
-      <Item />
+      {allItems.map((item: VotingItem) => (
+        <Item key={JSON.stringify(item)} item={item} />
+      ))}
     </VStack>
   );
 }
