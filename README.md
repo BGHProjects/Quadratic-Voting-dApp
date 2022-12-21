@@ -8,7 +8,7 @@
 ## Screenshots
 
 ### Create Item
-<div align="center"><img src="./READMEContent/CreateItemList.png" /></div>
+<div align="center"><img src="./READMEContent/CreateItemForm.png" /></div>
 
 ### Ranked List
 <div align="center"><img src="./READMEContent/RankedList.png" /></div>
