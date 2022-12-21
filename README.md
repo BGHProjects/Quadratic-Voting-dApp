@@ -8,7 +8,7 @@
 ## Screenshots
 
 ### Create Item
-<div align="center"><img src="./READMEContent/CreateItem.png" /></div>
+<div align="center"><img src="./READMEContent/CreateItemList.png" /></div>
 
 ### Ranked List
 <div align="center"><img src="./READMEContent/RankedList.png" /></div>
@@ -17,4 +17,4 @@
 [QuadraticVoting](https://testnet.snowtrace.io/address/0x6af3D87F0c37d73142765314f3773eC692996638)
 
 ## Test Coverage
-<div align="center"><img src=".READMEContent/TestCoverage.png" /></div>
+<div align="center"><img src="./READMEContent/TestCoverage.png" /></div>
